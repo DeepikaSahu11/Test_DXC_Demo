@@ -1,0 +1,29 @@
+
+class Bank1{
+float getRateOfInterest(){return 0;}  
+}  
+class SBI extends Bank1{  
+float getRateOfInterest(){return 4.2f;}  
+}  
+class ICICI extends Bank1{  
+float getRateOfInterest(){return 6.8f;}  
+}  
+class PNB extends Bank1{  
+float getRateOfInterest(){return 7.9f;}  
+}  
+
+public class Bankicc {
+	public static void main(String args[]){  
+		Bank1 b;  
+		b=new SBI();  
+		System.out.println("SBI Rate of Interest: "+b.getRateOfInterest());  
+		b=new ICICI();  
+		System.out.println("ICICI Rate of Interest: "+b.getRateOfInterest());  
+		b=new PNB();  
+		System.out.println("PNB Rate of Interest: "+b.getRateOfInterest());  
+		}  
+		} 
+
+
+
+
