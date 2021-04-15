@@ -1,0 +1,59 @@
+
+public class Recatangle {
+
+	private double length;  
+	   private double width;   
+	   public void setRectangle(double length, double width)
+	   {
+	      this.length = length;
+	      this.setWidth(width);
+	   }
+	 
+	   
+	   public double getArea()
+	   {
+	      return length * getWidth();
+	   }
+
+
+	public double getWidth() {
+		return width;
+	}
+
+
+	public void setWidth(double width) {
+		this.width = width;
+	}
+	
+}
+
+public class Box extends Recatangle
+{
+   private double height;  
+  
+   public void setBox(double length, double width, double height)
+   {
+     
+      setRectangle(length,width); 
+      this.height = height;
+   }
+ 
+   public double getVolume()
+   {
+      
+      return getArea() * height;
+   }
+}
+
+
+
+public class Simpleinheritence {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Box room = new Box();
+	      room.setBox(30, 12.6, 5.5);
+	      System.out.println("Volume is " + room.getVolume());
+	}
+
+}
