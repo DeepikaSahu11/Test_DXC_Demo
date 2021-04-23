@@ -4,9 +4,9 @@
 <%
             //String dob = "2000-12-12"; 
 String dob=request.getParameter("birthday");
-            int yearDOB = Integer.parseInt(dob.substring(0, 4));
-            int monthDOB = Integer.parseInt(dob.substring(5, 7));
-            int dayDOB = Integer.parseInt(dob.substring(8, 10));
+            int yearDOB = Integer.parseInt(dob.substring(0, 3));
+            int monthDOB = Integer.parseInt(dob.substring(5, 5));
+            int dayDOB = Integer.parseInt(dob.substring(6, 10));
 
             DateFormat dateFormat = new SimpleDateFormat("yyyy");
             java.util.Date date = new java.util.Date();
