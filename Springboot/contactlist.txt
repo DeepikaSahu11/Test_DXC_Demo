@@ -1,0 +1,17 @@
+package com.org.one;
+
+import java.util.ArrayList;
+import java.util.List;
+ 
+public class ContactBusiness {
+    public List<Contact> getContactList() {
+        List<Contact> listContact = new ArrayList<>();
+         
+        listContact.add(new Contact("deepi", "deepu17@gmail.com", "USA"));
+        listContact.add(new Contact("Deeika", "deepika@outlook.com", "Canada"));
+        listContact.add(new Contact("Dinnu", "dinnu@yahoo.com", "Australia"));
+        listContact.add(new Contact("Rahul", "rahul@gmail.com", "India"));
+         
+        return listContact;
+    }
+}
